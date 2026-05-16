@@ -1,0 +1,8 @@
+<svg width="540" height="120" viewBox="0 0 540 120" xmlns="http://www.w3.org/2000/svg">
+  <title>Shopcore v2 — Logo blanco</title>
+  <polygon points="66,14 90,28 90,56 66,70 42,56 42,28" fill="#ffffff"/>
+  <polygon points="94,38 118,52 118,80 94,94 70,80 70,52" fill="#ffffff" opacity="0.75"/>
+  <polygon points="66,60 90,74 90,102 66,116 42,102 42,74" fill="#ffffff" opacity="0.45"/>
+  <polygon points="94,14 108,22 108,38 94,46 80,38 80,22" fill="#ffffff" opacity="0.22"/>
+  <text x="138" y="74" font-family="'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-2" fill="#ffffff">Shopcore</text>
+</svg>
