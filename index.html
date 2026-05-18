@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nagu Technologies — Desarrollo de software a medida y soluciones retail: landings y e-commerce personalizado." />
-  <title>Nagu Technologies — Software a medida y retail digital</title>
+  <meta name="description" content="Nagu Technologies — Software factory en Argentina: desarrollo web a medida, integraciones y productos ERP. Cultura remote-first desde 2026." />
+  <title>Nagu Technologies — Software factory, integraciones y productos ERP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
@@ -16,39 +16,49 @@
 <div class="orb orb-2" aria-hidden="true"></div>
 <div class="orb orb-3" aria-hidden="true"></div>
 
-<nav id="navbar">
+<nav id="navbar" aria-label="Principal">
   <div class="nav-inner">
-    <a class="nav-logo" href="#top" aria-label="Nagu Technologies — Inicio">
+    <a class="nav-logo" href="index.html#top" aria-label="Nagu Technologies — Inicio">
       <img src="assets/logos/nagu/nagu_icon.svg" alt="" width="36" height="36" decoding="async" />
       <span class="nav-wordmark">
         <span class="nav-brand">Nagu</span>
         <span class="nav-brand-sub">Technologies</span>
       </span>
     </a>
-    <ul class="nav-links">
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#integraciones">Integraciones</a></li>
-      <li><a href="#proceso">Cómo trabajamos</a></li>
-      <li><a href="https://wa.me/5493743446875" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-    </ul>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+      <span class="nav-toggle-lines">
+        <span class="nav-toggle-line-1"></span>
+        <span class="nav-toggle-line-2"></span>
+        <span class="nav-toggle-line-3"></span>
+      </span>
+    </button>
+    <div id="primary-nav" class="nav-panel">
+      <ul class="nav-links">
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="index.html#integraciones">Integraciones</a></li>
+        <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+        <li><a href="https://wa.me/5493743446875" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
+<div class="nav-backdrop"></div>
 
 <section class="hero">
   <div class="container">
-    <div class="hero-badge"><span aria-hidden="true"></span> Software a medida · Retail digital</div>
-    <h1>Diseñamos y construimos<br><span class="accent">productos digitales</span><br>con enfoque <span class="accent-blue">comercial</span></h1>
+    <div class="hero-badge"><span aria-hidden="true"></span> Software factory · Producto · Integraciones</div>
+    <h1>Llevamos tu operación<br>al mundo digital<span class="accent"> con tecnología honesta </span></h1>
     <p class="hero-sub">
-      Nagu Technologies es un equipo de desarrollo que acompaña a empresas con sistemas a medida y experiencias de venta online construidas desde cero: landings, tiendas y backends pensados para operar de verdad.
+      Diseñamos y construimos software a medida, landings orientadas a resultados y e‑commerce cuando la plantilla no alcanza. Integramos pagos, marketplaces y fiscalidad para que tus equipos trabajen con un solo criterio: datos arriba, decisiones claras abajo, con el trato cercano de un equipo fundado en <strong style="font-weight:600;color:var(--white);">2026</strong>.
     </p>
     <div class="hero-actions">
       <a class="btn-primary" href="https://wa.me/5493743446875" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
-      <a class="btn-ghost" href="#servicios">Ver servicios</a>
+      <a class="btn-ghost" href="servicios.html">Ver cómo trabajamos en detalle</a>
     </div>
     <p class="hero-note">
-      Respuesta humana, sin formularios obligatorios por ahora.
+      Te respondemos en persona. Sin formulario obligatorio todavía.
       <a href="mailto:hola@nagutechnologies.com">hola@nagutechnologies.com</a>
     </p>
   </div>
@@ -56,7 +66,7 @@
 
 <div class="container">
   <div class="trust-bar fade-in">
-    <p>Experiencia trabajando con el stack argentino de comercio y fiscalidad</p>
+    <p>Construimos con el estándar de comercio y fiscalidad que ya usás en Argentina</p>
     <div class="trust-logos">
       <div class="trust-logo">
         <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" rx="4" fill="#FFE600"/><text x="3" y="14" font-size="9" font-weight="800" fill="#333">ML</text></svg>
@@ -82,102 +92,151 @@
   <div class="container">
     <div class="about-inner fade-in">
       <div class="section-label">Nagu Technologies</div>
-      <h2>Ingeniería aplicada al negocio</h2>
-      <p>
-        Trabajamos codo a codo con equipos que necesitan más que una plantilla: arquitectura clara, código mantenible y una interfaz que sus usuarios entienden. Combinamos producto y servicio para que puedas lanzar, medir y escalar sin rehacer todo cada seis meses.
-      </p>
+
+      <div class="about-intro">
+        <h2>¿Para qué estamos?</h2>
+        <p>
+          Somos Nagu Technologies, un equipo de producto y desarrollo pensado como <strong style="font-weight:600;color:var(--white);">partner técnico</strong>: vos traés la operación, el problema y los usuarios internos nosotros aportamos criterios de ingeniería, integraciones pragmáticas y software que puede seguir creciendo.
+        </p>
+      </div>
+
+      <div class="section-label">Cómo lo hacemos</div>
+      <div class="values-grid fade-in">
+        <article class="value-card">
+          <h3>Criterio de negocio</h3>
+          <p>Hablamos con responsables antes que con herramientas. Priorizamos el impacto sobre el feature list eterno para que cada sprint tenga dueño funcional.</p>
+        </article>
+        <article class="value-card">
+          <h3>Complejidad bajo control</h3>
+          <p>Elegimos arquitectura explícita, contratos claros entre servicios y trazabilidad operativa porque el día del incidente sos vos o tu equipo de soporte: les dejamos un sistema defendible.</p>
+        </article>
+        <article class="value-card">
+          <h3>Ejecución estable</h3>
+          <p>Entregamos iterativo, pero sin improvisar infraestructura en el camino observabilidad, ambientes reproducibles y handover documentado están en la mesa desde el día uno.</p>
+        </article>
+        <article class="value-card">
+          <h3>Transparencia</h3>
+          <p>Te contamos alcance realista, trade-offs honestos y riesgos tecnológicos. Preferimos frenar antes que prometer fecha imposible; la confianza es lo que escalamos mejor.</p>
+        </article>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="services" id="servicios">
-  <div class="container">
-    <div class="services-header fade-in">
-      <div class="section-label">Servicios</div>
-      <h2>Lo que hacemos<br>por tu equipo</h2>
-      <p>Implementaciones a medida y retail digital con stack propio — sin atajos que te limiten después.</p>
+<section class="cover-band">
+  <div class="container fade-in">
+    <div class="section-label">Qué cubrimos</div>
+    <h2>Del diagnóstico al deploy, en el mismo mapa</h2>
+    <div class="cover-actions">
+      <a class="btn-primary" href="servicios.html">Explorar servicios</a>
+      <a class="btn-ghost" href="productos.html">Ver productos</a>
     </div>
-    <div class="services-row">
-      <div class="service-card fade-in">
-        <div class="service-number">01 / DESARROLLO A MEDIDA</div>
-        <h3>Software que encaja en tu operación</h3>
-        <p>
-          Diseñamos y desarrollamos aplicaciones web y backends según tus procesos: integraciones, paneles internos, APIs y despliegues en la nube. Priorizamos entregas iterativas, observabilidad y documentación para que el equipo pueda seguir evolucionando el sistema.
+
+    <div class="mini-cap-grid">
+      <a class="mini-cap-card" href="#desarrollo-medida">
+        <h3>Desarrollo web a medida</h3>
+        <p>Apps internas y APIs donde la regla es tu proceso, no el CRUD feliz por defecto.</p>
+        <span class="mini-cap-more">Ir a esta sección</span>
+      </a>
+      <a class="mini-cap-card" href="#soluciones-erp">
+        <h3>Productos tipo ERP</h3>
+        <p>Módulos de gestión coherentes inventario, personas, canal de ventas y libro contable funcionando sobre la misma base.</p>
+        <span class="mini-cap-more">Ir a esta sección</span>
+      </a>
+      <a class="mini-cap-card" href="#landings">
+        <h3>Landing pages</h3>
+        <p>Vitrinas rápidas, performance y mensaje claro para campañas, lanzamiento o rebranding puntual.</p>
+        <span class="mini-cap-more">Ir a esta sección</span>
+      </a>
+      <a class="mini-cap-card" href="#ecommerce">
+        <h3>E‑commerce custom</h3>
+        <p>Tu tienda cuando el checkout genérico choca contra logística Argentina o reglas propias.</p>
+        <span class="mini-cap-more">Ir a esta sección</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="topic-deep" id="desarrollo-medida">
+  <div class="container fade-in">
+    <div class="topic-inner">
+      <div>
+        <div class="section-label">Capa de producto</div>
+        <h2>Desarrollo web a medida</h2>
+        <p class="topic-lead">
+          Construimos aplicaciones web y backends que se apoyan en tus reglas de negocio: permisos por rol, flujos con excepciones reales, documentación de API y ambientes reproducibles para que después del kick-off también puedas mantener vivo el sistema vos o con otros proveedores, sin dramas.
         </p>
-        <div class="service-pills">
-          <span class="pill">Backend</span>
-          <span class="pill">Frontend</span>
-          <span class="pill">APIs</span>
-          <span class="pill">Cloud</span>
-          <span class="pill">Integraciones</span>
-        </div>
       </div>
-      <div class="service-card fade-in">
-        <div class="service-number">02 / DESARROLLO RETAIL</div>
-        <h3>Landings y e‑commerce desde cero</h3>
-        <p>
-          Construimos tu presencia comercial digital sin plantillas genéricas: landings de alta conversión y tiendas online a medida con carrito, checkout, pagos (incluido Mercado Pago), envíos y logística, y un panel de administración para catálogo, pedidos y clientes.
-        </p>
-        <div class="service-pills">
-          <span class="pill">Landing pages</span>
-          <span class="pill">E‑commerce custom</span>
-          <span class="pill">Pagos &amp; envíos</span>
-          <span class="pill">Panel admin</span>
-          <span class="pill">UI / UX</span>
-        </div>
+      <div>
+        <ul class="topic-points">
+          <li>Paneles administrativos, portales cliente/proveedor y herramientas internas donde la UX cuenta tanto como el servidor.</li>
+          <li>Integraciones mediante APIs REST/eventos cuando el problema es conectar algo que ya viene heredado de hace años.</li>
+          <li>Consultoría de arquitectura y soporte continuado después del lanzamiento ver <a href="servicios.html" style="color:var(--teal);font-weight:500;text-decoration:none;">Servicios completos</a>.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section class="products" id="productos">
-  <div class="container">
-    <div class="products-header fade-in">
-      <div class="section-label">Productos</div>
-      <h2>Próximos lanzamientos</h2>
-      <p>Shopcore es nuestra apuesta de producto: gestión comercial integral. Hoy está en fase de diseño funcional y de experiencia, antes del desarrollo.</p>
+<section class="topic-deep alt-bg" id="soluciones-erp">
+  <div class="container fade-in">
+    <div class="topic-inner">
+      <div>
+        <div class="section-label">Gestión integral</div>
+        <h2>Productos tipo ERP para distintos rubros</h2>
+        <p class="topic-lead">
+          Muchas pymes no necesitan el monolito de los 90: necesitan módulos que hablen entre sí y que respeten la realidad fiscal y operativa local. Modelamos flujos de venta, stock, cuentas corrientes y relación con canales sin perder trazabilidad entre lo que prometés y lo que facturás.
+        </p>
+      </div>
+      <div>
+        <ul class="topic-points">
+          <li>Sectores muy distintos (salud, talleres mecánicos, construcción, estudios profesionales, tecnología…) comparten el mismo patrón: datos duplicados, planillas paralelas y poco control del margen nos ayudamos a ordenarlo.</li>
+          <li>Shopcore es nuestro producto bandera en ese camino: la evolución pública viví en la página de <a href="productos.html" style="color:var(--teal);font-weight:500;text-decoration:none;">Productos</a>.</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
 
-    <article class="product-showcase fade-in">
-      <div class="product-badge-row">
-        <span class="product-badge">Shopcore</span>
-        <span class="product-badge-muted">En diseño · Roadmap activo</span>
+<section class="topic-deep" id="landings">
+  <div class="container fade-in">
+    <div class="topic-inner">
+      <div>
+        <div class="section-label">Presencia rápida</div>
+        <h2>Landing pages con foco conversión</h2>
+        <p class="topic-lead">
+          Cuando el objetivo es claro lanzar algo nuevo, comunicar diferenciación puntual o soportar ads con página veloz necesitás una superficie enfocada, medible y fácil de iterar sin arrastrarte un CMS abandonado después de tres meses.
+        </p>
       </div>
-      <div class="shopcore-logo-wrap">
-        <img src="assets/logos/shopcore/shopcore_v2_logo_white.svg" alt="Shopcore" />
+      <div>
+        <ul class="topic-points">
+          <li>Performance, copy y formularios saneados desde el día uno porque el CTR lo paga vos, pero el lead lo pierden la latencia media y el texto confuso.</li>
+          <li>Integraciones ligeras CRM, emailing, WhatsApp clicables y tracking listo cuando el equipo de marketing aparece después del deploy.</li>
+        </ul>
       </div>
-      <p class="lead">
-        Una plataforma pensada para ordenar la operación diaria: documentos de venta, stock, relación con clientes y proveedores, y canales como Mercado Libre — con trazabilidad entre lo que vendés y lo que facturás.
-      </p>
-      <div class="product-modules">
-        <div class="module-item">
-          <strong>Facturación</strong>
-          Cotizaciones, remitos, facturas y notas vinculadas a tus flujos de venta.
-        </div>
-        <div class="module-item">
-          <strong>Cuentas corrientes</strong>
-          Seguimiento de cobros, saldos y movimientos por cuenta.
-        </div>
-        <div class="module-item">
-          <strong>Productos &amp; stock</strong>
-          Catálogo, disponibilidad y movimientos de inventario coherentes con las ventas.
-        </div>
-        <div class="module-item">
-          <strong>Clientes &amp; proveedores</strong>
-          Datos unificados para evitar duplicar operaciones entre módulos.
-        </div>
-        <div class="module-item">
-          <strong>Mercado Libre</strong>
-          Relevamiento de ventas del canal y emisión fiscal alineada al resto del sistema.
-        </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic-deep alt-bg" id="ecommerce">
+  <div class="container fade-in">
+    <div class="topic-inner">
+      <div>
+        <div class="section-label">Retail digital sin plantillas</div>
+        <h2>E‑commerce personalizado</h2>
+        <p class="topic-lead">
+          Si tu operación mezcla stock físico, envíos complejos, reglas de precio raras o integraciones con Mercado Libre además de tu catálogo propio, el template se queda corto. Diseñamos checkout, panel de administración y flujos post-venta alineados a tu logística real.
+        </p>
       </div>
-      <p class="product-footnote">
-        Si querés sumarte como beta o explorar un piloto cuando abramos desarrollo, escribinos y coordinamos una llamada breve.
-      </p>
-      <div class="hero-actions" style="margin-top: 24px;">
-        <a class="btn-primary" href="https://wa.me/5493743446875?text=Hola%2C%20me%20interesa%20conocer%20novedades%20de%20Shopcore." target="_blank" rel="noopener noreferrer">Consultar por Shopcore</a>
+      <div>
+        <ul class="topic-points">
+          <li>Pagos y envíos con proveedores que ya usás (Mercado Pago, couriers, retiro en sucursal, etc.) modelados en el flujo, no como parche.</li>
+          <li>Panel de catálogo, pedidos y clientes coherente con tu operación incluso antes de llegar al ERP completo.</li>
+          <li>Capa de datos lista para después alimentar un sistema mayor de gestión sin reescribir inventario desde cero.</li>
+        </ul>
       </div>
-    </article>
+    </div>
   </div>
 </section>
 
@@ -186,7 +245,8 @@
     <div class="section-label">Integraciones</div>
     <h2>Conectamos con tu ecosistema</h2>
     <p class="lead">
-      En proyectos retail y de gestión solemos integrar pagos, marketplaces y fiscalidad argentina. Si tu caso requiere otro proveedor, lo evaluamos en la propuesta técnica.
+      En proyectos locales solemos tocar Mercado Libre, Tiendanube, Mercado Pago y línea fiscal nacional. Si aparece algo fuera del menú habitual, forma parte natural del trabajo de descubrir contratos, errores esperables de cada API y límites reales antes de cerrar roadmap.
+      <span style="display:block;margin-top:12px;">El detalle táctico y la matriz por tipo de proyecto está en nuestra página de <a href="servicios.html" style="color:var(--teal);font-weight:500;text-decoration:none;">Servicios</a>.</span>
     </p>
     <div class="integration-cards">
       <div class="integration-card">
@@ -213,24 +273,37 @@
   <div class="container">
     <div class="how-header fade-in">
       <div class="section-label">Cómo trabajamos</div>
-      <h2>Tres pasos, siempre claros</h2>
+      <h2>Tres pasos, siempre explícitos</h2>
     </div>
     <div class="steps">
       <div class="step fade-in">
         <div class="step-num">1</div>
-        <h3>Diagnóstico breve</h3>
-        <p>Entendemos objetivos, usuarios, sistemas actuales y restricciones. Definimos alcance realista y entregables.</p>
+        <h3>Diagnóstico humano</h3>
+        <p>Escuchamos el contexto, roles y sistemas vigentes definimos objetivos alcanzables y qué sí o qué no entra sin maquillar expectativas.</p>
       </div>
       <div class="step fade-in">
         <div class="step-num">2</div>
-        <h3>Diseño &amp; construcción</h3>
-        <p>Priorizamos el núcleo usable: prototipo o MVP, integraciones críticas y pruebas con datos representativos.</p>
+        <h3>Diseño y construcción</h3>
+        <p>Hacemos el núcleo usable primero MVP o prototipo funcionando contra datos reales, integraciones necesarias ahí mismo y feedback temprano de usuarios internos.</p>
       </div>
       <div class="step fade-in">
         <div class="step-num">3</div>
-        <h3>Puesta en marcha</h3>
-        <p>Deploy, capacitación corta y plan de evolución. Quedamos disponibles para iteraciones y soporte.</p>
+        <h3>Puesta en marcha y evolución</h3>
+        <p>Deploy, handover y plan de mantenimiento: no desaparecemos al subir a producción el software vive y nosotros mantenemos la conversación abierta.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="products-teaser">
+  <div class="container fade-in">
+    <div class="products-teaser-inner">
+      <div class="section-label">Productos</div>
+      <h2>Software que podés licenciar, no solo encargar</h2>
+      <p>
+        Además de proyectos a medida, diseñamos productos de gestión pensados para escalar entre rubros. Hoy el foco abierto al público es Shopcore, en desarrollo activo. Si querés profundizar módulos, roadmap y cómo sumarte a la conversación, pasá por la página dedicada.
+      </p>
+      <a class="btn-primary" href="productos.html">Ir a Productos</a>
     </div>
   </div>
 </section>
@@ -238,13 +311,12 @@
 <section class="cta-section" id="contacto">
   <div class="container">
     <div class="cta-box fade-in">
-      <h2>¿Tenés un proyecto<br>en mente?</h2>
-      <p>Escribinos por WhatsApp con una idea del contexto (tipo de negocio, plazo aproximado y si hay sistema legacy). Respondemos con próximos pasos.</p>
+      <h2>¿Hablamos por WhatsApp sobre lo que estás necesitando?</h2>
+      <p>Mandanos contexto por WhatsApp (rubro, sistemas actuales, horizonte de tiempo). Te respondemos con próximos pasos concretos sin depender de un formulario frío.</p>
       <div class="cta-actions">
         <a class="btn-primary" href="https://wa.me/5493743446875" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
         <a class="btn-ghost" href="mailto:hola@nagutechnologies.com">Enviar email</a>
       </div>
-      <p class="cta-note">Argentina · Trabajo remoto con equipos en todo el país</p>
     </div>
   </div>
 </section>
@@ -258,13 +330,10 @@
         <span class="nav-brand-sub">Technologies</span>
       </div>
     </div>
-    <p class="footer-copy">© 2026 Nagu Technologies. Hecho con cuidado en Argentina.</p>
+    <p class="footer-copy">© 2026 Nagu Technologies. Hecho en Argentina · Fundada en 2026</p>
     <p class="footer-contact">
       <a href="mailto:hola@nagutechnologies.com">hola@nagutechnologies.com</a>
       · WhatsApp <a href="https://wa.me/5493743446875" target="_blank" rel="noopener noreferrer">+54 9 3743 44-6875</a>
-    </p>
-    <p class="footer-placeholder">
-      Oficina / dirección (placeholder): Av. Ejemplo 1234, Buenos Aires — actualizar cuando corresponda.
     </p>
     <div class="footer-links">
       <a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a>
