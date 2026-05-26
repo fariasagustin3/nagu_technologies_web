@@ -6,7 +6,8 @@
     });
   }
 
-  var toggle = document.querySelector('.nav-toggle');
+  var toggle = document.querySelector('.nav-inner > .nav-toggle');
+  var closeBtn = document.querySelector('.nav-close');
   var panel = document.getElementById('primary-nav');
   var backdrop = document.querySelector('.nav-backdrop');
 
@@ -55,6 +56,9 @@
 
   if (toggle && panel) {
     toggle.addEventListener('click', toggleDrawer);
+  }
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeDrawer);
   }
   if (backdrop) {
     backdrop.addEventListener('click', closeDrawer);
