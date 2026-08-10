@@ -150,6 +150,7 @@
 
   function runHeroEntrance() {
     var heroTitle = document.getElementById('hero-title');
+    var glitchEl = heroTitle ? heroTitle.querySelector('.glitch-text') : null;
     var scrambleTarget = document.getElementById('scramble-target');
     var heroHighlight = document.getElementById('hero-highlight');
 
@@ -163,10 +164,10 @@
 
     var glitchDelay = prefersReduced ? 0 : 750;
     setTimeout(function () {
-      if (heroTitle && !prefersReduced) {
-        heroTitle.classList.add('glitch-on');
+      if (glitchEl && !prefersReduced) {
+        glitchEl.classList.add('glitch-on');
         setTimeout(function () {
-          heroTitle.classList.remove('glitch-on');
+          glitchEl.classList.remove('glitch-on');
         }, 550);
       }
       if (heroHighlight) heroHighlight.classList.add('shine-in');
