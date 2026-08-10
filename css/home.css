@@ -61,11 +61,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Sora', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--white);
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+#curtain .curtain-logo img {
+  width: min(220px, 52vw);
+  height: auto;
+  display: block;
 }
 
 .orb-float {
