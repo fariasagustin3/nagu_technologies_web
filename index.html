@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="scroll-smooth" lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Nagu Labs — Software factory en Argentina: desarrollo web a medida, integraciones y productos ERP." />
-  <title>Nagu Labs — Software factory, integraciones y productos ERP</title>
+  <title>Nagu Labs — Tecnología Honesta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
-<body id="top">
+<body id="top" class="page-home">
 
-<div class="orb orb-1" aria-hidden="true"></div>
-<div class="orb orb-2" aria-hidden="true"></div>
-<div class="orb orb-3" aria-hidden="true"></div>
+<div id="curtain" aria-hidden="true">
+  <div class="curtain-panel curtain-panel-l"></div>
+  <div class="curtain-panel curtain-panel-r"></div>
+  <span class="curtain-logo">Nagu Labs</span>
+</div>
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<div class="orb orb-1 orb-float" aria-hidden="true"></div>
+<div class="orb orb-2 orb-float delay-2" aria-hidden="true"></div>
+<div class="orb orb-3 orb-float delay-3" aria-hidden="true"></div>
 
 <nav id="navbar" aria-label="Principal">
   <div class="nav-inner">
     <a class="nav-logo" href="index.html#top" aria-label="Nagu Labs — Inicio">
-      <img class="nav-logo-icon" src="assets/logos/nagu/nagu_labs_icon_transparent.svg" alt="" width="36" height="36" decoding="async" />
-      <img class="nav-wordmark-img" src="assets/logos/nagu/nagu_labs_wordmark_primary.svg" alt="Nagu Labs" height="32" decoding="async" />
+      <img class="nav-logo-icon" src="assets/logos/nagu/nagu_icono_navy.svg" alt="" width="36" height="36" decoding="async" />
+      <img class="nav-wordmark-img" src="assets/logos/nagu/nagu_wordmark_navy.svg" alt="Nagu Labs" height="32" decoding="async" />
     </a>
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
       <span class="nav-toggle-lines">
@@ -36,312 +46,359 @@
         </button>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="productos.html">Productos</a></li>
-        <li><a href="index.html#integraciones">Integraciones</a></li>
-        <li><a href="index.html#proceso">Cómo trabajamos</a></li>
-        <li><a href="https://wa.me/5491159097510" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li>
+          <a href="https://wa.me/5491159097510" class="nav-cta nav-cta-wa" target="_blank" rel="noopener noreferrer">
+            <span class="pulse-dot nav-cta-pulse" aria-hidden="true"></span>
+            <span class="material-symbols-outlined nav-cta-icon" style="font-variation-settings: 'FILL' 1;">chat</span>
+            WhatsApp
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 <div class="nav-backdrop"></div>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-badge"><span aria-hidden="true"></span> Software factory · Producto · Integraciones</div>
-    <h1>Llevamos tu operación<br>al mundo digital<span class="accent"> con tecnología honesta </span></h1>
-    <p class="hero-sub">
-      Diseñamos y construimos software a medida, landings orientadas a resultados y e‑commerce cuando la plantilla no alcanza. Integramos pagos, marketplaces y fiscalidad para que tus equipos trabajen con un solo criterio: datos arriba, decisiones claras abajo, con el trato cercano de un equipo dedicado al éxito de tu negocio.
-    </p>
-    <div class="hero-actions">
-      <a class="btn-primary" href="https://wa.me/5491159097510" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
-      <a class="btn-ghost" href="servicios.html">Ver cómo trabajamos en detalle</a>
-    </div>
-    <p class="hero-note">
-      Te respondemos en persona. Sin formulario obligatorio todavía.
-      <a href="mailto:ventas@nagulabs.com">ventas@nagulabs.com</a>
-    </p>
-  </div>
-</section>
-
-<div class="container">
-  <div class="trust-bar fade-in">
-    <p>Construimos con el estándar de comercio y fiscalidad que ya usás en Argentina</p>
-    <div class="trust-logos">
-      <div class="trust-logo">
-        <img src="assets/logos/integrations/mercadolibre.png" alt="" width="20" height="20" decoding="async" />
-        Mercado Libre
-      </div>
-      <div class="trust-logo">
-        <img src="assets/logos/integrations/tiendanube.png" alt="" height="18" decoding="async" />
-        Tiendanube
-      </div>
-      <div class="trust-logo">
-        <img src="assets/logos/integrations/arca.svg" alt="" width="20" height="20" decoding="async" />
-        ARCA
-      </div>
-      <div class="trust-logo">
-        <img src="assets/logos/integrations/mercadopago.png" alt="" width="20" height="20" decoding="async" />
-        Mercado Pago
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="about" id="nosotros">
-  <div class="container">
-    <div class="about-inner fade-in">
-      <div class="section-label">Nagu Labs</div>
-
-      <div class="about-intro">
-        <h2>¿Para qué estamos?</h2>
-        <p>
-          Somos Nagu Labs, un equipo de producto y desarrollo pensado como <strong style="font-weight:600;color:var(--text);">partner técnico</strong>: vos traés la operación, el problema y los usuarios internos nosotros aportamos criterios de ingeniería, integraciones pragmáticas y software que puede seguir creciendo.
-        </p>
-      </div>
-
-      <div class="section-label">Cómo lo hacemos</div>
-      <div class="values-grid fade-in">
-        <article class="value-card">
-          <h3>Criterio de negocio</h3>
-          <p>Hablamos con responsables antes que con herramientas. Priorizamos el impacto sobre el feature list eterno para que cada sprint tenga dueño funcional.</p>
-        </article>
-        <article class="value-card">
-          <h3>Complejidad bajo control</h3>
-          <p>Elegimos arquitectura explícita, contratos claros entre servicios y trazabilidad operativa porque el día del incidente sos vos o tu equipo de soporte: les dejamos un sistema defendible.</p>
-        </article>
-        <article class="value-card">
-          <h3>Ejecución estable</h3>
-          <p>Entregamos iterativo, pero sin improvisar infraestructura en el camino observabilidad, ambientes reproducibles y handover documentado están en la mesa desde el día uno.</p>
-        </article>
-        <article class="value-card">
-          <h3>Transparencia</h3>
-          <p>Te contamos alcance realista, trade-offs honestos y riesgos tecnológicos. Preferimos frenar antes que prometer fecha imposible; la confianza es lo que escalamos mejor.</p>
-        </article>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="cover-band">
-  <div class="container fade-in">
-    <div class="section-label">Qué cubrimos</div>
-    <h2>Del diagnóstico al deploy, en el mismo mapa</h2>
-    <div class="cover-actions">
-      <a class="btn-primary" href="servicios.html">Explorar servicios</a>
-      <a class="btn-ghost" href="productos.html">Ver productos</a>
+<main>
+  <!-- Hero limpio: sin panel dashboard, con motion del mock -->
+  <section class="home-hero" id="hero-section">
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="parallax-layer" aria-hidden="true">
+      <svg class="parallax-el parallax-el--tr" data-speed="0.35" fill="none" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="1.5" fill="currentColor"></circle>
+        <circle cx="120" cy="90" r="1.5" fill="currentColor"></circle>
+        <circle cx="300" cy="130" r="1.5" fill="currentColor"></circle>
+        <circle cx="330" cy="260" r="1.5" fill="currentColor"></circle>
+        <circle cx="150" cy="310" r="1.5" fill="currentColor"></circle>
+        <circle cx="60" cy="220" r="1.5" fill="currentColor"></circle>
+        <path d="M200 200L120 90M200 200L300 130M200 200L330 260M200 200L150 310M200 200L60 220M120 90L300 130" stroke="currentColor" stroke-width="0.75"></path>
+      </svg>
+      <svg class="parallax-el parallax-el--bl" data-speed="0.55" fill="none" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <rect height="399" rx="1" stroke="currentColor" stroke-width="0.75" width="399" x="0.5" y="0.5"></rect>
+        <path d="M0 100H140V240H400M260 0V140H400" stroke="currentColor" stroke-width="0.75"></path>
+        <circle cx="140" cy="240" fill="currentColor" r="3"></circle>
+        <circle cx="260" cy="140" fill="currentColor" r="3"></circle>
+      </svg>
+      <svg class="parallax-el parallax-el--mid" data-speed="0.2" fill="none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-dasharray="4 6" stroke-width="1"></circle>
+        <circle cx="100" cy="30" fill="currentColor" r="3"></circle>
+      </svg>
     </div>
 
-    <div class="mini-cap-grid">
-      <a class="mini-cap-card" href="#desarrollo-medida">
-        <h3>Desarrollo web a medida</h3>
-        <p>Apps internas y APIs donde la regla es tu proceso, no el CRUD feliz por defecto.</p>
-        <span class="mini-cap-more">Ir a esta sección</span>
-      </a>
-      <a class="mini-cap-card" href="#soluciones-erp">
-        <h3>Productos tipo ERP</h3>
-        <p>Módulos de gestión coherentes inventario, personas, canal de ventas y libro contable funcionando sobre la misma base.</p>
-        <span class="mini-cap-more">Ir a esta sección</span>
-      </a>
-      <a class="mini-cap-card" href="#landings">
-        <h3>Landing pages</h3>
-        <p>Vitrinas rápidas, performance y mensaje claro para campañas, lanzamiento o rebranding puntual.</p>
-        <span class="mini-cap-more">Ir a esta sección</span>
-      </a>
-      <a class="mini-cap-card" href="#ecommerce">
-        <h3>E‑commerce custom</h3>
-        <p>Tu tienda cuando el checkout genérico choca contra logística Argentina o reglas propias.</p>
-        <span class="mini-cap-more">Ir a esta sección</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="topic-deep" id="desarrollo-medida">
-  <div class="container fade-in">
-    <div class="topic-inner">
-      <div>
-        <div class="section-label">Capa de producto</div>
-        <h2>Desarrollo web a medida</h2>
-        <p class="topic-lead">
-          Construimos aplicaciones web y backends que se apoyan en tus reglas de negocio: permisos por rol, flujos con excepciones reales, documentación de API y ambientes reproducibles para que después del kick-off también puedas mantener vivo el sistema vos o con otros proveedores, sin dramas.
-        </p>
-      </div>
-      <div>
-        <ul class="topic-points">
-          <li>Paneles administrativos, portales cliente/proveedor y herramientas internas donde la UX cuenta tanto como el servidor.</li>
-          <li>Integraciones mediante APIs REST/eventos cuando el problema es conectar algo que ya viene heredado de hace años.</li>
-          <li>Consultoría de arquitectura y soporte continuado después del lanzamiento ver <a href="servicios.html" style="color:var(--teal);font-weight:500;text-decoration:none;">Servicios completos</a>.</li>
-        </ul>
+    <div class="container home-hero-inner">
+      <p class="home-hero-eyebrow reveal-up">Software factory · Producto · Integraciones</p>
+      <h1 class="glitch-text reveal-up" data-text="Llevamos tu operación al mundo digital con tecnología honesta." id="hero-title" style="transition-delay: 60ms;">
+        <span id="scramble-target">Llevamos tu operación al mundo digital con </span><span class="hero-highlight" id="hero-highlight">tecnología honesta.</span>
+      </h1>
+      <p class="home-hero-sub reveal-up" style="transition-delay: 220ms;">
+        Consultoría técnica confiable. Hablás directo con los fundadores, sin intermediarios. Desarrollamos software a medida que funciona y escala, diseñado con criterio de negocio.
+      </p>
+      <div class="home-hero-actions reveal-up" style="transition-delay: 380ms;">
+        <a class="magnetic-btn btn-wa" href="https://wa.me/5491159097510" target="_blank" rel="noopener noreferrer">
+          <span class="pulse-dot btn-wa-pulse" aria-hidden="true"></span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+          Coordinar por WhatsApp
+        </a>
+        <a class="magnetic-btn btn-outline" href="#proceso">Ver cómo trabajamos</a>
       </div>
     </div>
-  </div>
-</section>
 
-<section class="topic-deep alt-bg" id="soluciones-erp">
-  <div class="container fade-in">
-    <div class="topic-inner">
-      <div>
-        <div class="section-label">Gestión integral</div>
-        <h2>Productos tipo ERP para distintos rubros</h2>
-        <p class="topic-lead">
-          Muchas pymes no necesitan el monolito de los 90: necesitan módulos que hablen entre sí y que respeten la realidad fiscal y operativa local. Modelamos flujos de venta, stock, cuentas corrientes y relación con canales sin perder trazabilidad entre lo que prometés y lo que facturás.
-        </p>
-      </div>
-      <div>
-        <ul class="topic-points">
-          <li>Sectores muy distintos (salud, talleres mecánicos, construcción, estudios profesionales, tecnología…) comparten el mismo patrón: datos duplicados, planillas paralelas y poco control del margen nos ayudamos a ordenarlo.</li>
-          <li>Shopcore es nuestro producto bandera en ese camino: la evolución pública viví en la página de <a href="productos.html" style="color:var(--teal);font-weight:500;text-decoration:none;">Productos</a>.</li>
-        </ul>
-      </div>
+    <a class="scroll-hint reveal-up" href="#nosotros" aria-label="Descubrí más" style="transition-delay: 500ms;">
+      <span>Descubrí más</span>
+      <span class="material-symbols-outlined scroll-hint-icon">expand_more</span>
+    </a>
+  </section>
+
+  <!-- Marquee -->
+  <section class="marquee-section reveal-up" id="integraciones">
+    <div class="container">
+      <p class="marquee-label">Integraciones y tecnologías que dominamos</p>
     </div>
-  </div>
-</section>
-
-<section class="topic-deep" id="landings">
-  <div class="container fade-in">
-    <div class="topic-inner">
-      <div>
-        <div class="section-label">Presencia rápida</div>
-        <h2>Landing pages con foco conversión</h2>
-        <p class="topic-lead">
-          Cuando el objetivo es claro lanzar algo nuevo, comunicar diferenciación puntual o soportar ads con página veloz necesitás una superficie enfocada, medible y fácil de iterar sin arrastrarte un CMS abandonado después de tres meses.
-        </p>
-      </div>
-      <div>
-        <ul class="topic-points">
-          <li>Performance, copy y formularios saneados desde el día uno porque el CTR lo paga vos, pero el lead lo pierden la latencia media y el texto confuso.</li>
-          <li>Integraciones ligeras CRM, emailing, WhatsApp clicables y tracking listo cuando el equipo de marketing aparece después del deploy.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="topic-deep alt-bg" id="ecommerce">
-  <div class="container fade-in">
-    <div class="topic-inner">
-      <div>
-        <div class="section-label">Retail digital sin plantillas</div>
-        <h2>E‑commerce personalizado</h2>
-        <p class="topic-lead">
-          Si tu operación mezcla stock físico, envíos complejos, reglas de precio raras o integraciones con Mercado Libre además de tu catálogo propio, el template se queda corto. Diseñamos checkout, panel de administración y flujos post-venta alineados a tu logística real.
-        </p>
-      </div>
-      <div>
-        <ul class="topic-points">
-          <li>Pagos y envíos con proveedores que ya usás (Mercado Pago, couriers, retiro en sucursal, etc.) modelados en el flujo, no como parche.</li>
-          <li>Panel de catálogo, pedidos y clientes coherente con tu operación incluso antes de llegar al ERP completo.</li>
-          <li>Capa de datos lista para después alimentar un sistema mayor de gestión sin reescribir inventario desde cero.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="integrations" id="integraciones">
-  <div class="container fade-in">
-    <div class="section-label">Integraciones</div>
-    <h2>Conectamos con tu ecosistema</h2>
-    <p class="lead">
-      En proyectos locales solemos tocar Mercado Libre, Tiendanube, Mercado Pago y línea fiscal nacional. Si aparece algo fuera del menú habitual, forma parte natural del trabajo de descubrir contratos, errores esperables de cada API y límites reales antes de cerrar roadmap.
-      <span style="display:block;margin-top:12px;">El detalle táctico y la matriz por tipo de proyecto está en nuestra página de <a href="servicios.html" style="color:var(--teal);font-weight:500;text-decoration:none;">Servicios</a>.</span>
-    </p>
-    <div class="integration-cards">
-      <div class="integration-card">
-        <img class="integration-logo" src="assets/logos/integrations/mercadolibre.png" alt="" width="32" height="32" decoding="async" />
+    <div class="marquee-shine-wrap">
+      <div class="marquee-shine" aria-hidden="true"></div>
+      <div class="marquee-track">
         <span>Mercado Libre</span>
-      </div>
-      <div class="integration-card">
-        <img class="integration-logo integration-logo--wide" src="assets/logos/integrations/tiendanube.png" alt="" height="22" decoding="async" />
         <span>Tiendanube</span>
-      </div>
-      <div class="integration-card">
-        <img class="integration-logo" src="assets/logos/integrations/arca.svg" alt="" width="32" height="32" decoding="async" />
         <span>ARCA</span>
-      </div>
-      <div class="integration-card">
-        <img class="integration-logo" src="assets/logos/integrations/mercadopago.png" alt="" width="32" height="32" decoding="async" />
+        <span>Mercado Pago</span>
+        <span>Mercado Libre</span>
+        <span>Tiendanube</span>
+        <span>ARCA</span>
         <span>Mercado Pago</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="how" id="proceso">
-  <div class="container">
-    <div class="how-header fade-in">
-      <div class="section-label">Cómo trabajamos</div>
-      <h2>Tres pasos, siempre explícitos</h2>
-    </div>
-    <div class="steps">
-      <div class="step fade-in">
-        <div class="step-num">1</div>
-        <h3>Diagnóstico humano</h3>
-        <p>Escuchamos el contexto, roles y sistemas vigentes definimos objetivos alcanzables y qué sí o qué no entra sin maquillar expectativas.</p>
+  <!-- Nosotros -->
+  <section class="home-section" id="nosotros">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <h2>¿Qué significa <span class="text-teal">Tecnología Honesta</span>?</h2>
+        <p>Es nuestro compromiso de entregar soluciones reales a problemas reales, sin humo ni sobrediseño. Construimos sobre estos cuatro pilares:</p>
       </div>
-      <div class="step fade-in">
-        <div class="step-num">2</div>
-        <h3>Diseño y construcción</h3>
-        <p>Hacemos el núcleo usable primero MVP o prototipo funcionando contra datos reales, integraciones necesarias ahí mismo y feedback temprano de usuarios internos.</p>
-      </div>
-      <div class="step fade-in">
-        <div class="step-num">3</div>
-        <h3>Puesta en marcha y evolución</h3>
-        <p>Deploy, handover y plan de mantenimiento: no desaparecemos al subir a producción el software vive y nosotros mantenemos la conversación abierta.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="products-teaser">
-  <div class="container fade-in">
-    <div class="products-teaser-inner">
-      <div class="section-label">Productos</div>
-      <h2>Software que podés licenciar, no solo encargar</h2>
-      <p>
-        Además de proyectos a medida, diseñamos productos de gestión pensados para escalar entre rubros. Hoy el foco abierto al público es Shopcore, en desarrollo activo. Si querés profundizar módulos, roadmap y cómo sumarte a la conversación, pasá por la página dedicada.
-      </p>
-      <a class="btn-primary" href="productos.html">Ir a Productos</a>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section" id="contacto">
-  <div class="container">
-    <div class="cta-box fade-in">
-      <h2>¿Hablamos por WhatsApp sobre lo que estás necesitando?</h2>
-      <p>Mandanos contexto por WhatsApp (rubro, sistemas actuales, horizonte de tiempo). Te respondemos con próximos pasos concretos sin depender de un formulario frío.</p>
-      <div class="cta-actions">
-        <a class="btn-primary" href="https://wa.me/5491159097510" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
-        <a class="btn-ghost" href="mailto:ventas@nagulabs.com">Enviar email</a>
+      <div class="values-grid-home">
+        <article class="value-card-home card-hover pop-reveal tilt-card" style="--rot: -2deg; transition-delay: 80ms;">
+          <div class="value-icon">
+            <span class="material-symbols-outlined">trending_up</span>
+          </div>
+          <h3>Criterio de negocio</h3>
+          <p>Cada línea de código debe tener un propósito claro que impacte positivamente en los objetivos de tu empresa.</p>
+        </article>
+        <article class="value-card-home card-hover pop-reveal tilt-card" style="--rot: 2deg; transition-delay: 160ms;">
+          <div class="value-icon">
+            <span class="material-symbols-outlined">architecture</span>
+          </div>
+          <h3>Complejidad bajo control</h3>
+          <p>Evitamos el sobre-ingeniería. Diseñamos arquitecturas limpias y mantenibles que resuelven el problema de hoy y escalan mañana.</p>
+        </article>
+        <article class="value-card-home card-hover pop-reveal tilt-card" style="--rot: -1.5deg; transition-delay: 240ms;">
+          <div class="value-icon">
+            <span class="material-symbols-outlined">verified</span>
+          </div>
+          <h3>Ejecución estable</h3>
+          <p>Sistemas que no se caen cuando más los necesitas. Priorizamos la fiabilidad, la seguridad y el rendimiento robusto.</p>
+        </article>
+        <article class="value-card-home card-hover pop-reveal tilt-card" style="--rot: 1.5deg; transition-delay: 320ms;">
+          <div class="value-icon">
+            <span class="material-symbols-outlined">visibility</span>
+          </div>
+          <h3>Transparencia</h3>
+          <p>Comunicación directa con los fundadores. Sin sorpresas, con expectativas claras sobre tiempos, costos y viabilidad técnica.</p>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="container">
-    <div class="footer-brand">
-      <img class="footer-brand-icon" src="assets/logos/nagu/nagu_labs_icon_transparent.svg" alt="" width="32" height="32" />
-      <img class="footer-wordmark-img" src="assets/logos/nagu/nagu_labs_wordmark_primary.svg" alt="Nagu Labs" height="28" decoding="async" />
+  <!-- Servicios (preview → servicios.html) -->
+  <section class="home-section home-section--muted" id="servicios">
+    <div class="container">
+      <div class="section-intro section-intro--left reveal-up">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones a medida para digitalizar y potenciar tu operación.</p>
+      </div>
+      <div class="services-grid-home">
+        <a class="service-card-home card-hover pop-reveal tilt-card" href="servicios.html" style="--rot: -2deg; transition-delay: 80ms;">
+          <div class="service-card-top">
+            <div class="service-icon service-icon--blue">
+              <span class="material-symbols-outlined">api</span>
+            </div>
+            <span class="material-symbols-outlined service-arrow">arrow_outward</span>
+          </div>
+          <h3>Integraciones a medida</h3>
+          <p>Conectamos tus sistemas existentes (ERPs, CRMs) con plataformas de e-commerce, logística y pagos para automatizar flujos de trabajo.</p>
+        </a>
+        <a class="service-card-home card-hover pop-reveal tilt-card" href="servicios.html" style="--rot: 2deg; transition-delay: 160ms;">
+          <div class="service-card-top">
+            <div class="service-icon service-icon--teal">
+              <span class="material-symbols-outlined">developer_mode</span>
+            </div>
+            <span class="material-symbols-outlined service-arrow">arrow_outward</span>
+          </div>
+          <h3>Desarrollo de Software Custom</h3>
+          <p>Construimos plataformas web y aplicaciones a medida desde cero, diseñadas específicamente para resolver los cuellos de botella de tu negocio.</p>
+        </a>
+        <a class="service-card-home card-hover pop-reveal tilt-card" href="servicios.html" style="--rot: -1.5deg; transition-delay: 240ms;">
+          <div class="service-card-top">
+            <div class="service-icon service-icon--navy">
+              <span class="material-symbols-outlined">cloud_sync</span>
+            </div>
+            <span class="material-symbols-outlined service-arrow">arrow_outward</span>
+          </div>
+          <h3>Migración y Modernización</h3>
+          <p>Actualizamos sistemas legados a arquitecturas cloud modernas, mejorando la seguridad, el rendimiento y reduciendo costos operativos.</p>
+        </a>
+        <a class="service-card-home card-hover pop-reveal tilt-card" href="servicios.html" style="--rot: 1.5deg; transition-delay: 320ms;">
+          <div class="service-card-top">
+            <div class="service-icon service-icon--muted">
+              <span class="material-symbols-outlined">support_agent</span>
+            </div>
+            <span class="material-symbols-outlined service-arrow">arrow_outward</span>
+          </div>
+          <h3>Soporte y Evolución</h3>
+          <p>No entregamos código y nos vamos. Acompañamos el crecimiento de tu producto con mantenimiento proactivo y desarrollo de nuevas features.</p>
+        </a>
+      </div>
+      <div class="section-cta-row reveal-up">
+        <a class="btn-outline" href="servicios.html">Ver servicios en detalle</a>
+      </div>
     </div>
-    <p class="footer-copy">© 2026 Nagu Labs. Hecho en Argentina</p>
-    <p class="footer-contact">
-      <a href="mailto:ventas@nagulabs.com">ventas@nagulabs.com</a>
-      · WhatsApp <a href="https://wa.me/5491159097510" target="_blank" rel="noopener noreferrer">+54 9 11 5909-7510</a>
-    </p>
-    <div class="footer-links">
-      <a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a>
-      <a href="#" aria-label="Instagram (placeholder)">Instagram</a>
-      <a href="#" aria-label="GitHub (placeholder)">GitHub</a>
+  </section>
+
+  <!-- Cómo trabajamos -->
+  <section class="home-section" id="proceso">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <h2>Cómo trabajamos</h2>
+        <p>Un proceso estructurado para garantizar resultados, sin burocracia innecesaria.</p>
+      </div>
+      <div class="process-track">
+        <div class="process-track-bg" aria-hidden="true"></div>
+        <div id="process-line" aria-hidden="true"></div>
+        <div id="process-dot" aria-hidden="true"></div>
+        <div class="process-steps">
+          <div class="process-step reveal-up" style="transition-delay: 100ms;">
+            <div class="process-num">1</div>
+            <div>
+              <h3>Diagnóstico humano</h3>
+              <p>Nos sentamos a entender tu negocio. Identificamos cuellos de botella y definimos el alcance real del problema antes de pensar en código.</p>
+            </div>
+          </div>
+          <div class="process-step reveal-up" style="transition-delay: 250ms;">
+            <div class="process-num">2</div>
+            <div>
+              <h3>Diseño y construcción</h3>
+              <p>Proponemos una arquitectura y desarrollamos iterativamente. Mostramos avances tempranos para asegurar alineación constante.</p>
+            </div>
+          </div>
+          <div class="process-step reveal-up" style="transition-delay: 400ms;">
+            <div class="process-num process-num--filled">3</div>
+            <div>
+              <h3>Puesta en marcha y evolución</h3>
+              <p>Desplegamos de forma segura. Monitoreamos el rendimiento y planificamos los siguientes pasos basados en uso real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopcore -->
+  <section class="shopcore-band" id="shopcore">
+    <div class="shopcore-orbs" aria-hidden="true">
+      <div class="orb-float shopcore-orb shopcore-orb-1"></div>
+      <div class="orb-float delay-2 shopcore-orb shopcore-orb-2"></div>
+      <div class="orb-float delay-3 shopcore-orb shopcore-orb-3"></div>
+    </div>
+    <div class="parallax-layer" aria-hidden="true">
+      <svg class="parallax-el shopcore-parallax" data-speed="0.3" fill="none" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="150" cy="150" r="1.5" fill="currentColor"></circle>
+        <circle cx="80" cy="60" r="1.5" fill="currentColor"></circle>
+        <circle cx="230" cy="90" r="1.5" fill="currentColor"></circle>
+        <circle cx="250" cy="220" r="1.5" fill="currentColor"></circle>
+        <circle cx="60" cy="230" r="1.5" fill="currentColor"></circle>
+        <path d="M150 150L80 60M150 150L230 90M150 150L250 220M150 150L60 230" stroke="currentColor" stroke-width="0.75"></path>
+      </svg>
+    </div>
+    <div class="container shopcore-inner">
+      <div class="shopcore-copy reveal-up">
+        <div class="shopcore-badge">
+          <span class="shopcore-badge-dot"></span>
+          Producto interno
+        </div>
+        <h2>Shopcore</h2>
+        <p>Nuestro ERP nativo para e-commerce. Diseñado específicamente para resolver la complejidad operativa de la venta online multicanal.</p>
+        <div class="shopcore-tags">
+          <span class="shopcore-tag shopcore-tag--pending">
+            <span class="material-symbols-outlined">build</span> En desarrollo
+          </span>
+          <span class="shopcore-tag">
+            <span class="live-dot"></span> Roadmap activo
+          </span>
+        </div>
+        <a class="shopcore-link" href="productos.html">
+          Ver productos y roadmap <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+      <div class="shopcore-modules">
+        <div class="shopcore-module card-hover pop-reveal tilt-card" style="--rot: -2deg; transition-delay: 80ms;">
+          <span class="material-symbols-outlined">receipt_long</span>
+          <h4>Facturación</h4>
+        </div>
+        <div class="shopcore-module card-hover pop-reveal tilt-card" style="--rot: 2deg; transition-delay: 140ms;">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <h4>Compras</h4>
+        </div>
+        <div class="shopcore-module card-hover pop-reveal tilt-card" style="--rot: -1.5deg; transition-delay: 200ms;">
+          <span class="material-symbols-outlined">account_balance_wallet</span>
+          <h4>Cuentas corrientes</h4>
+        </div>
+        <div class="shopcore-module card-hover pop-reveal tilt-card" style="--rot: 1.5deg; transition-delay: 260ms;">
+          <span class="material-symbols-outlined">inventory_2</span>
+          <h4>Productos &amp; stock</h4>
+        </div>
+        <div class="shopcore-module card-hover pop-reveal tilt-card" style="--rot: -2deg; transition-delay: 320ms;">
+          <span class="material-symbols-outlined">group</span>
+          <h4>Clientes &amp; prov.</h4>
+        </div>
+        <div class="shopcore-module card-hover pop-reveal tilt-card" style="--rot: 2deg; transition-delay: 380ms;">
+          <span class="material-symbols-outlined">storefront</span>
+          <h4>Mercado Libre</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="home-section home-cta-section" id="contacto">
+    <div class="container">
+      <div class="home-cta-box reveal-up">
+        <div class="aurora-bg" aria-hidden="true"></div>
+        <div class="home-cta-orbs" aria-hidden="true">
+          <div class="orb-float home-cta-orb home-cta-orb-1"></div>
+          <div class="orb-float delay-2 home-cta-orb home-cta-orb-2"></div>
+          <div class="orb-float delay-3 home-cta-orb home-cta-orb-3"></div>
+        </div>
+        <div class="home-cta-content">
+          <h2>¿Listo para mejorar tu operación?</h2>
+          <p>Escribinos por WhatsApp. Hablás directo con los fundadores, sin bots ni intermediarios de ventas. Evaluamos tu caso sin compromiso.</p>
+          <a class="magnetic-btn btn-wa btn-wa--lg" href="https://wa.me/5491159097510" target="_blank" rel="noopener noreferrer">
+            <span class="pulse-dot btn-wa-pulse" aria-hidden="true"></span>
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+            Coordinar por WhatsApp
+          </a>
+          <p class="home-cta-email">O envianos un email a <a href="mailto:ventas@nagulabs.com">ventas@nagulabs.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="home-footer">
+  <div class="container home-footer-grid">
+    <div class="home-footer-brand">
+      <div class="footer-brand">
+        <img class="footer-brand-icon" src="assets/logos/nagu/nagu_icono_navy.svg" alt="" width="32" height="32" />
+        <img class="footer-wordmark-img" src="assets/logos/nagu/nagu_wordmark_navy.svg" alt="Nagu Labs" height="28" decoding="async" />
+      </div>
+      <p>Tecnología Honesta para tu negocio.</p>
+      <p class="footer-copy">© 2026 Nagu Labs. Tecnología Honesta.</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="servicios.html">Integraciones</a></li>
+        <li><a href="servicios.html">Desarrollo Custom</a></li>
+        <li><a href="productos.html">Shopcore ERP</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Compañía</h4>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Conectar</h4>
+      <ul>
+        <li><a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a></li>
+        <li><a href="#" aria-label="Instagram (placeholder)">Instagram</a></li>
+        <li><a href="#" aria-label="GitHub (placeholder)">GitHub</a></li>
+        <li><a class="home-footer-contact" href="mailto:ventas@nagulabs.com">ventas@nagulabs.com</a></li>
+      </ul>
     </div>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/home-motion.js"></script>
 </body>
 </html>

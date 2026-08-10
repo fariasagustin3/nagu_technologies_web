@@ -1,0 +1,316 @@
+/* Servicios — intensidad entre Home y Productos */
+
+.page-services {
+  --section-gap: 104px;
+  --status-pending: #fecb00;
+  background: #f5faff;
+}
+
+.page-services .container {
+  max-width: 1280px;
+}
+
+.page-services .nav-cta-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  position: relative;
+  padding: 9px 18px;
+}
+
+.page-services .nav-cta-icon { font-size: 18px; }
+
+.page-services .nav-cta-pulse {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 2px solid var(--white);
+}
+
+/* Hero */
+.services-hero {
+  position: relative;
+  min-height: min(88vh, 760px);
+  display: flex;
+  align-items: center;
+  padding: 148px 0 88px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.services-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.services-eyebrow {
+  font-family: 'Sora', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 18px;
+}
+
+.services-hero h1 {
+  font-size: clamp(32px, 5.2vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--navy);
+  margin-bottom: 18px;
+}
+
+.services-hero-sub {
+  font-size: clamp(16px, 2vw, 19px);
+  color: var(--text-sub);
+  font-weight: 300;
+  line-height: 1.65;
+  max-width: 560px;
+  margin: 0 0 28px;
+}
+
+.services-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.services-pricing-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  max-width: 480px;
+  line-height: 1.55;
+}
+
+.services-pricing-note strong {
+  color: var(--text-sub);
+  font-weight: 600;
+}
+
+.services-hero .parallax-el--tr {
+  opacity: 0.1;
+}
+
+.services-hero .parallax-el--bl {
+  opacity: 0.09;
+}
+
+.services-hero .cursor-glow {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(29,158,117,0.13) 0%, rgba(55,138,221,0.06) 45%, transparent 70%);
+}
+
+/* Grid: 3x2 on desktop */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Accordion (shared pattern with productos + services extras) */
+.services-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.page-services .accordion-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  scroll-margin-top: 100px;
+}
+
+.page-services .accordion-item[open],
+.page-services .accordion-item.is-open {
+  border-color: rgba(29, 158, 117, 0.28);
+  box-shadow: 0 8px 24px rgba(13, 43, 78, 0.06);
+}
+
+.page-services .accordion-item summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  cursor: pointer;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--navy);
+  user-select: none;
+}
+
+.page-services .accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 1.6em;
+}
+
+.page-services .accordion-icon {
+  color: var(--teal);
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.page-services .accordion-title {
+  flex: 1;
+  text-align: left;
+  line-height: 1.35;
+}
+
+.page-services .accordion-chevron {
+  color: var(--text-muted);
+  font-size: 22px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.page-services .accordion-item.is-open .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.page-services .accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.28s ease;
+}
+
+.page-services .accordion-item.is-open .accordion-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.page-services .accordion-panel > .accordion-body {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.page-services .accordion-body {
+  padding: 0 20px 22px 64px;
+  font-size: 15px;
+  color: var(--text-sub);
+  line-height: 1.65;
+  font-weight: 300;
+  transform: translateY(-8px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-services .accordion-item.is-open .accordion-body {
+  transform: translateY(0);
+}
+
+.page-services .accordion-body > p {
+  margin-bottom: 12px;
+}
+
+.page-services .accordion-body ul {
+  list-style: none;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.page-services .accordion-body li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.page-services .accordion-body li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.accordion-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--teal);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Sora', sans-serif;
+  transition: color 0.2s;
+}
+
+.accordion-link:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-services {
+    --section-gap: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-hero {
+    min-height: auto;
+    padding: 128px 0 64px;
+  }
+
+  .services-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .services-hero-actions .btn-wa,
+  .services-hero-actions .btn-outline {
+    width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-services .accordion-body {
+    padding-left: 20px;
+  }
+
+  .page-services .accordion-item summary {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .accordion-num {
+    display: none;
+  }
+}
